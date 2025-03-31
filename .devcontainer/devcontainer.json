@@ -1,0 +1,47 @@
+{
+    "dockerComposeFile": [
+        "docker-compose.yaml"
+    ],
+    "name": "docker_python",
+    "service": "docker_python",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "python.pythonPath": "/usr/local/bin/python",
+                "python.linting.pylintEnabled": false,
+                "python.linting.mypyEnabled": true,
+                "python.linting.flake8Enabled": true,
+                "python.linting.flake8Args": [
+                    "--max-line-length=119",
+                    "--ignore=E203,W503"
+                ],
+                "python.linting.pydocstyleEnabled": true,
+                "python.linting.pydocstyleArgs": [
+                    "--ignore=D107,D202,D203,D213,D400,D403,D406,D407,D413,D415"
+                ],
+                "python.linting.lintOnSave": true,
+                "python.formatting.provider": "black",
+                "python.formatting.blackArgs": [
+                    "--line-length=119"
+                ],
+                "editor.formatOnSave": true,
+                "editor.codeActionsOnSave": {
+                    "source.organizeImports": "explicit"
+                },
+                "editor.rulers": [
+                    88,
+                    119
+                ]
+            },
+            "extensions": [
+                "ms-python.python",
+                "njpwerner.autodocstring",
+                "ms-toolsai.jupyter",
+                "ms-ceintl.vscode-language-pack-ja",
+                "mechatroner.rainbow-csv"
+            ]
+        }
+    }
+}

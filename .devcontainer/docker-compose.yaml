@@ -1,0 +1,14 @@
+services:
+  docker_python:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+      args:
+        - USERNAME=${USERNAME}
+        - USER_UID=${USER_UID}
+        - USER_GID=${USER_GID}
+        - DISPLAY=${DISPLAY}
+    volumes:
+      - ../:/workspace
+
+    tty: true

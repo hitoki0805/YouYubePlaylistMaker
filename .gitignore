@@ -1,0 +1,8 @@
+.devcontainer/.env
+test.py
+APIKeys
+token.json
+__pycache__/
+*.csv
+.cursorignore
+.DS_Store
